@@ -34,16 +34,16 @@ def set_args():
     parser.add_argument('--data_dir', default='data/')
     parser.add_argument('--bert_path', default='bert/')
     
-    parser.add_argument('--negative_sample_size', default=16, type=int)
+    parser.add_argument('--negative_sample_size', default=32, type=int)
     parser.add_argument('--bottleneck_size', default=64, type=int)
-    parser.add_argument('--bert_max_len', default=256, type=int)
+    parser.add_argument('--bert_max_len', default=512, type=int)
     parser.add_argument('--adversarial_temperature', default=10, type=int)
     
-    parser.add_argument('--bs_train', default=4)
+    parser.add_argument('--bs_train', default=8)
     parser.add_argument('--epochs', default=15)
-    parser.add_argument('--warmup_steps', default=10000)
+    parser.add_argument('--warmup_steps', default=5000)
     parser.add_argument('--eval_step', default=10000)
-    parser.add_argument('--bs_eval', default=32)
+    parser.add_argument('--bs_eval', default=16)
     parser.add_argument('--save_step', default=100000)
 
     parser.add_argument('--lr', default=0.001, type=float)
